@@ -11,6 +11,14 @@
 		2209CAC92A64651900A3F40C /* CharacterList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2209CAC82A64651900A3F40C /* CharacterList.swift */; };
 		2209CACB2A64651A00A3F40C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2209CACA2A64651A00A3F40C /* Assets.xcassets */; };
 		2209CACE2A64651A00A3F40C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2209CACD2A64651A00A3F40C /* Preview Assets.xcassets */; };
+		2209CADB2A6468CB00A3F40C /* Apollo in Frameworks */ = {isa = PBXBuildFile; productRef = 2209CADA2A6468CB00A3F40C /* Apollo */; };
+		2209CADD2A6468CB00A3F40C /* ApolloWebSocket in Frameworks */ = {isa = PBXBuildFile; productRef = 2209CADC2A6468CB00A3F40C /* ApolloWebSocket */; };
+		222655C92A646D4A00EA0F5B /* schema.graphqls in Resources */ = {isa = PBXBuildFile; fileRef = 222655C82A646D4A00EA0F5B /* schema.graphqls */; };
+		222655CF2A646D9D00EA0F5B /* RickAndMortyAPI in Frameworks */ = {isa = PBXBuildFile; productRef = 222655CE2A646D9D00EA0F5B /* RickAndMortyAPI */; };
+		222655D12A646E7C00EA0F5B /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 222655D02A646E7C00EA0F5B /* NetworkManager.swift */; };
+		222655D32A64772F00EA0F5B /* CharacterService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 222655D22A64772F00EA0F5B /* CharacterService.swift */; };
+		222655D82A647D1600EA0F5B /* CharacterListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 222655D72A647D1600EA0F5B /* CharacterListViewModel.swift */; };
+		22A2CE1F2A64970B00F07C57 /* CharacterCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22A2CE1E2A64970B00F07C57 /* CharacterCardView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +27,13 @@
 		2209CAC82A64651900A3F40C /* CharacterList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterList.swift; sourceTree = "<group>"; };
 		2209CACA2A64651A00A3F40C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2209CACD2A64651A00A3F40C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		222655C82A646D4A00EA0F5B /* schema.graphqls */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = schema.graphqls; sourceTree = "<group>"; };
+		222655CA2A646D6E00EA0F5B /* CharacterList.graphql */ = {isa = PBXFileReference; lastKnownFileType = text; path = CharacterList.graphql; sourceTree = "<group>"; };
+		222655CC2A646D9600EA0F5B /* RickAndMortyAPI */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = RickAndMortyAPI; sourceTree = "<group>"; };
+		222655D02A646E7C00EA0F5B /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		222655D22A64772F00EA0F5B /* CharacterService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterService.swift; sourceTree = "<group>"; };
+		222655D72A647D1600EA0F5B /* CharacterListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterListViewModel.swift; sourceTree = "<group>"; };
+		22A2CE1E2A64970B00F07C57 /* CharacterCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterCardView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,6 +41,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2209CADB2A6468CB00A3F40C /* Apollo in Frameworks */,
+				222655CF2A646D9D00EA0F5B /* RickAndMortyAPI in Frameworks */,
+				2209CADD2A6468CB00A3F40C /* ApolloWebSocket in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -35,8 +53,10 @@
 		2209CABA2A64651900A3F40C = {
 			isa = PBXGroup;
 			children = (
+				222655CB2A646D9600EA0F5B /* Packages */,
 				2209CAC52A64651900A3F40C /* RickAndMorty */,
 				2209CAC42A64651900A3F40C /* Products */,
+				222655CD2A646D9D00EA0F5B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -51,13 +71,12 @@
 		2209CAC52A64651900A3F40C /* RickAndMorty */ = {
 			isa = PBXGroup;
 			children = (
+				222655C72A646D4A00EA0F5B /* graphql */,
+				2209CAD42A64677600A3F40C /* Networking */,
 				2209CAD82A6467E700A3F40C /* Services */,
-				2209CAD72A6467E300A3F40C /* Model */,
 				2209CAD62A6467DC00A3F40C /* Screens */,
 				2209CAD52A6467CF00A3F40C /* Views */,
-				2209CAD42A64677600A3F40C /* Networking */,
 				2209CAC62A64651900A3F40C /* RickAndMortyApp.swift */,
-				2209CAC82A64651900A3F40C /* CharacterList.swift */,
 				2209CACA2A64651A00A3F40C /* Assets.xcassets */,
 				2209CACC2A64651A00A3F40C /* Preview Content */,
 			);
@@ -75,6 +94,7 @@
 		2209CAD42A64677600A3F40C /* Networking */ = {
 			isa = PBXGroup;
 			children = (
+				222655D02A646E7C00EA0F5B /* NetworkManager.swift */,
 			);
 			path = Networking;
 			sourceTree = "<group>";
@@ -82,6 +102,7 @@
 		2209CAD52A6467CF00A3F40C /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				22A2CE1E2A64970B00F07C57 /* CharacterCardView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -89,22 +110,50 @@
 		2209CAD62A6467DC00A3F40C /* Screens */ = {
 			isa = PBXGroup;
 			children = (
+				222655D62A647CBD00EA0F5B /* CharactersList */,
 			);
 			path = Screens;
-			sourceTree = "<group>";
-		};
-		2209CAD72A6467E300A3F40C /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
 			sourceTree = "<group>";
 		};
 		2209CAD82A6467E700A3F40C /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				222655D22A64772F00EA0F5B /* CharacterService.swift */,
 			);
 			path = Services;
+			sourceTree = "<group>";
+		};
+		222655C72A646D4A00EA0F5B /* graphql */ = {
+			isa = PBXGroup;
+			children = (
+				222655C82A646D4A00EA0F5B /* schema.graphqls */,
+				222655CA2A646D6E00EA0F5B /* CharacterList.graphql */,
+			);
+			path = graphql;
+			sourceTree = SOURCE_ROOT;
+		};
+		222655CB2A646D9600EA0F5B /* Packages */ = {
+			isa = PBXGroup;
+			children = (
+				222655CC2A646D9600EA0F5B /* RickAndMortyAPI */,
+			);
+			name = Packages;
+			sourceTree = "<group>";
+		};
+		222655CD2A646D9D00EA0F5B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		222655D62A647CBD00EA0F5B /* CharactersList */ = {
+			isa = PBXGroup;
+			children = (
+				2209CAC82A64651900A3F40C /* CharacterList.swift */,
+				222655D72A647D1600EA0F5B /* CharacterListViewModel.swift */,
+			);
+			path = CharactersList;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -123,6 +172,11 @@
 			dependencies = (
 			);
 			name = RickAndMorty;
+			packageProductDependencies = (
+				2209CADA2A6468CB00A3F40C /* Apollo */,
+				2209CADC2A6468CB00A3F40C /* ApolloWebSocket */,
+				222655CE2A646D9D00EA0F5B /* RickAndMortyAPI */,
+			);
 			productName = RickAndMorty;
 			productReference = 2209CAC32A64651900A3F40C /* RickAndMorty.app */;
 			productType = "com.apple.product-type.application";
@@ -151,6 +205,9 @@
 				Base,
 			);
 			mainGroup = 2209CABA2A64651900A3F40C;
+			packageReferences = (
+				2209CAD92A6468CB00A3F40C /* XCRemoteSwiftPackageReference "apollo-ios" */,
+			);
 			productRefGroup = 2209CAC42A64651900A3F40C /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -166,6 +223,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2209CACE2A64651A00A3F40C /* Preview Assets.xcassets in Resources */,
+				222655C92A646D4A00EA0F5B /* schema.graphqls in Resources */,
 				2209CACB2A64651A00A3F40C /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -177,8 +235,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				222655D12A646E7C00EA0F5B /* NetworkManager.swift in Sources */,
 				2209CAC92A64651900A3F40C /* CharacterList.swift in Sources */,
 				2209CAC72A64651900A3F40C /* RickAndMortyApp.swift in Sources */,
+				222655D82A647D1600EA0F5B /* CharacterListViewModel.swift in Sources */,
+				22A2CE1F2A64970B00F07C57 /* CharacterCardView.swift in Sources */,
+				222655D32A64772F00EA0F5B /* CharacterService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -313,8 +375,9 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIStatusBarStyle = "";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -342,8 +405,9 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIStatusBarStyle = "";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -379,6 +443,34 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		2209CAD92A6468CB00A3F40C /* XCRemoteSwiftPackageReference "apollo-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/apollographql/apollo-ios.git";
+			requirement = {
+				kind = upToNextMinorVersion;
+				minimumVersion = 1.3.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		2209CADA2A6468CB00A3F40C /* Apollo */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2209CAD92A6468CB00A3F40C /* XCRemoteSwiftPackageReference "apollo-ios" */;
+			productName = Apollo;
+		};
+		2209CADC2A6468CB00A3F40C /* ApolloWebSocket */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2209CAD92A6468CB00A3F40C /* XCRemoteSwiftPackageReference "apollo-ios" */;
+			productName = ApolloWebSocket;
+		};
+		222655CE2A646D9D00EA0F5B /* RickAndMortyAPI */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = RickAndMortyAPI;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 2209CABB2A64651900A3F40C /* Project object */;
 }
